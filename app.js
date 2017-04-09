@@ -15,6 +15,6 @@ app.post('/upload', upload.single('file'), function(req,res,next){
   return res.json({size: req.file.size});
 });
 
-app.listen(3000,function(){
+app.listen(80,function(){
   console.log("Server listening on port 3000")
 });
